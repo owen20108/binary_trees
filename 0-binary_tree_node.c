@@ -8,7 +8,8 @@
  *
  * Description:
  * This function creates a new binary tree node with the specified value
- * and parent node.
+ * and parent node. It allocates memory for the new node and initializes
+ * its properties. If the allocation fails, it returns NULL.
  *
  * Return: A pointer to the new node, or NULL on failure
  */
@@ -17,7 +18,7 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
     /* Declare a new binary tree node pointer */
     binary_tree_t *newNode;
 
-    /* Allocate memory space for the new node */
+    /* Allocate memory for the new node */
     newNode = (binary_tree_t *)malloc(sizeof(binary_tree_t));
 
     /* Check if memory allocation was successful */
